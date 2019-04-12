@@ -15,7 +15,6 @@ def ObtainDate():
             print "Date not valid, try again.\n"
     return d
 
-
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
  
@@ -45,7 +44,7 @@ def read_temp():
 
     x = read_temp()
     print "Current temperature:", x
-    '''
+ 
 
 
 while True: #checks that input is the desired one
@@ -111,7 +110,6 @@ if (input_var == '2'): #here we fetch a date by which the raspberry will have th
     today2 = datetime.now()
     waittimesecs = (usergivendate2-today).seconds 
 
-    heatingtime2 = 1
         #calculate the time needed to heat the car here!!  use x = current temperature and heatingtime2 = properly calculate formula
 
         if (x < -15):
@@ -132,6 +130,4 @@ if (input_var == '2'): #here we fetch a date by which the raspberry will have th
 
 print("Calcualted time needed for heating is: "+heatingtime2+"seconds") #relay commands here...?
 pass    
-'''
-
-        
+ 
