@@ -15,7 +15,7 @@ def ObtainDate():
             print "Date not valid, try again.\n"
     return d
 
-'''
+
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
  
@@ -113,7 +113,7 @@ if (input_var == '2'): #here we fetch a date by which the raspberry will have th
 
     heatingtime2 = 1
         #calculate the time needed to heat the car here!!  use x = current temperature and heatingtime2 = properly calculate formula
-'''
+
         if (x < -15):
          heatingtime2 = 9000
         
@@ -129,8 +129,9 @@ if (input_var == '2'): #here we fetch a date by which the raspberry will have th
 
         else: 
             print "The car does not need to be heated "
-'''
+
 print("Calcualted time needed for heating is: "+heatingtime2+"seconds") #relay commands here...?
 pass    
+'''
 
         
